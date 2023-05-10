@@ -17,10 +17,12 @@ https://github.com/Lurimago/ChallengeQA-Api-Karate.git
 2. Instrucciones para ejecutar los test
 	Ejecutar el UserRunner		->	Ubicado en src\test\java\petstore\user\UserRunner.java
 
-4. Información adicional
+3. Información adicional
 	Se ejecutó todo el flujo de forma satisfactoria
 
-7. Información adicional
-	La documentación de postman:
-	https://documenter.getpostman.com/view/21507307/2s93Y6sz6B
-
+4. Información adicional
+	- La documentación de postman:
+	    https://documenter.getpostman.com/view/21507307/2s93Y6sz6B
+	- Para ver reportes de Karate:
+	    Dirigirse a:   \build\karate-reports\karate-summary.html
+	    Clic derecho y elegir Open in/ Browser/ Chrome
