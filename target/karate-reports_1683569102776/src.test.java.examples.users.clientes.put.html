@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.petstore.users.clientes.put</title>
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-05-08 12:35:44 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>modificar un usuario</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/petstore/users/clientes/put.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">ejemplos de tipo PUT</span>
+          <span class="feature-description">Como usuario
+  Quiero realizar peticiones de tipo PUT
+  Para verificar la modificación de usuarios</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">modificar un usuario</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2009</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://jsonplaceholder.typicode.com/users/4&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">115</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">68</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.8">{
+&quot;name&quot;: &#39;Homero&#39;,
+&quot;username&quot;: &#39;homeroS&#39;,
+&quot;email&quot;: &#39;homero.simpson@ejemplo.com&#39;,
+&quot;address&quot;: {
+  &quot;street&quot;: &#39;Avenida Siempreviva 742&#39;,
+  &quot;suite&quot;: &#39;01&#39;,
+  &quot;city&quot;: &#39;Springfield&#39;,
+  &quot;zipcode&quot;: &#39;12345-6789&#39;
+  }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1825</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">12:35:43.680 request:
+1 &gt; PUT https://jsonplaceholder.typicode.com/users/4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 179
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_361)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Homero&quot;,&quot;username&quot;:&quot;homeroS&quot;,&quot;email&quot;:&quot;homero.simpson@ejemplo.com&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Avenida Siempreviva 742&quot;,&quot;suite&quot;:&quot;01&quot;,&quot;city&quot;:&quot;Springfield&quot;,&quot;zipcode&quot;:&quot;12345-6789&quot;}}
+
+12:35:44.545 response time in milliseconds: 862
+1 &lt; 200
+1 &lt; Date: Mon, 08 May 2023 17:36:02 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 999
+1 &lt; X-Ratelimit-Reset: 1683567391
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Cache-Control: no-cache
+1 &lt; Pragma: no-cache
+1 &lt; Expires: -1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Etag: W/&quot;ea-/SJgYu1FqC/zB/gUdaitAZ3ukwc&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=V%2B61D3nxSeT%2FyZEyHqnvk2%2B%2BbXhv6ayYlV8knQkGwMfk6HggUll%2Fkn6Xxfzvn0NGYJpw0GcyDPvdsqG1z5EUXnDPcL%2BKdmhLkbGwWhamBA%2Fdt331%2FO3wQpd5DMqyYKc%2BS%2BHJc34cIV%2FpakI0X4Vj&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 7c43766c6eaa1e9a-EZE
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{
+  &quot;name&quot;: &quot;Homero&quot;,
+  &quot;username&quot;: &quot;homeroS&quot;,
+  &quot;email&quot;: &quot;homero.simpson@ejemplo.com&quot;,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;Avenida Siempreviva 742&quot;,
+    &quot;suite&quot;: &quot;01&quot;,
+    &quot;city&quot;: &quot;Springfield&quot;,
+    &quot;zipcode&quot;: &quot;12345-6789&quot;
+  },
+  &quot;id&quot;: 4
+}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

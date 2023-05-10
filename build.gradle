@@ -1,0 +1,55 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //implementation 'junit:junit:4.13.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+    //implementation 'com.intuit.karate:karate-junit4:1.2.0.RC1'
+    implementation 'com.intuit.karate:karate-junit5:1.2.0.RC1'
+    //para cambiar, solo modificar junit"4 o 5"
+    //implementation 'com.intuit.karate:karate-junit5:${karate.version}'
+    implementation 'net.masterthought:cucumber-reporting:5.6.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+sourceSets {
+    test {
+        runtimeClasspath += sourceSets.main.output
+    }
+}
+
+sourceSets {
+    test {
+        resources {
+            srcDir file('src/test/java')
+            exclude '**/*.java'
+            runtimeClasspath += sourceSets.main.output
+        }
+    }
+}
+
+configurations {
+    intTestImplementation.extendsFrom implementation
+    intTestRuntimeOnly.extendsFrom runtimeOnly
+}
+
+def task = task('karateExecute', type: JavaExec) {
+    classpath = sourceSets.test.runtimeClasspath
+    //main = System.properties.getProperty('mainClass')
+    main(System.properties.getProperty('mainClass'))
+}
+task

@@ -1,0 +1,18 @@
+Challenge en el repositorio Github público: 
+https://github.com/Lurimago/ChallengeQA-Api-Karate.git
+
+Conclusiones:
+
+Ejercicio de APIS :
+
+	- Se utilizó postman como software para pruebas de servicios REST.
+	- Se utilizó Cypress y cy.request para las peticiones automatizadas.
+	- Se creó un usuario
+	- Se buscó al usuario creado
+	- Se actualizó el nombre y el correo del usuario
+	- Se Buscó al usuario actualizado
+	- Se eliminó al usuario
+
+La documentación se encuentra en:
+https://documenter.getpostman.com/view/21507307/2s93Y6sz6B
+
