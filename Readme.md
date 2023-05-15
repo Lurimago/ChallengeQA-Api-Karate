@@ -10,7 +10,6 @@ https://github.com/Lurimago/ChallengeQA-Api-Karate.git
         - Cucumber for java
         - Gherkin
         - Substeps IntelliJ Plugin
-    - Verificar dependencias del pom.xlm
     - Java versión:		1.8.0_361
     - Gradle versión:	8.1.1
 

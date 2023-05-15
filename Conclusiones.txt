@@ -5,14 +5,20 @@ Conclusiones:
 
 Ejercicio de APIS :
 
-	- Se utilizó postman como software para pruebas de servicios REST.
-	- Se utilizó Cypress y cy.request para las peticiones automatizadas.
-	- Se creó un usuario
-	- Se buscó al usuario creado
-	- Se actualizó el nombre y el correo del usuario
-	- Se Buscó al usuario actualizado
-	- Se eliminó al usuario
+1.  Flujo
+	    - Se utilizó postman como software para pruebas de servicios REST.
+	    - Se utilizó Karate Framework para las peticiones automatizadas.
+	    - Se creó un usuario
+	    - Se buscó al usuario creado
+	    - Se actualizó el nombre y el correo del usuario
+	    - Se Buscó al usuario actualizado
+	    - Se eliminó al usuario
 
-La documentación se encuentra en:
-https://documenter.getpostman.com/view/21507307/2s93Y6sz6B
+2.  La documentación se encuentra en:
+    https://documenter.getpostman.com/view/21507307/2s93Y6sz6B
 
+3.  Karate y Cucumber proporcionan juntos un marco de trabajo completo y
+    efectivo para la automatización de pruebas de API, facilitan la legibilidad y
+    reutilización de código, la generación de informes con Karate hace que se
+    visualicen detalles que ayudan a la escalabilidad de las pruebas de API.
+    Esto nos favorece con pruebas automatizadas más eficientes, confiables y mantenibles.
